@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body design height and width 100v  position and color */
+/*
+height & width:  ارتفاع و عرض کل صفحه مرورگر
+background-image: عکس پس زمینه
+background-position: عکس در وسط صفحه
+color: رنگ نوشته ها
+display: محل باکس فیلم flexible
+justify-content: باکس فیلم از عرض صفحه وسط
+align-items:باکس فیلم از ارتفاع صفحه وسط
+
+*/
+.body {
+  height: 100vh;
+  width: 100vw;
+  /*background-image: url("../img/illustration-Star-Wars-logo-brand-screenshot-1920x1080-px-616414-wallhere.com.jpg");*/
+  background-image: url("illustration-Star-Wars-logo-brand-screenshot-1920x1080-px-616414-wallhere.com.jpg");
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* movie box width and height of box 50% and 60% / border white and radius  filter blur */
+/*
+  width: 50% صفحه;
+  height: 60%صفحه;
+  border: 0.2rem white solid         قاب دور باکس سفید سالید و 0.2;
+  border-radius: 5rem          حالت انها در باکس دور;
+  padding: 2rem 2rem 1rem 3rem       فاصله از دور قاب;
+  backdrop-filter: blur(1rem)     مات کردن عکس پس زمینه در محدوده قاب;
+
+*/
+.sec {
+  width: 50%;
+  height: 60%;
+  border: 0.2rem white solid;
+  border-radius: 5rem;
+  padding: 2rem 2rem 1rem 3rem;
+  backdrop-filter: blur(1rem);
+}
+
+ /* MOVIE BOX h1 */
+
+/*
+مارجین MOVIE
+
+*/
+.h1 {
+  margin-bottom: 0.5rem;
+}
+/* information of each movie flexible and space between*/
+
+/*
+  display: نحوه نمایش اطلاعات فیلم در لیست کهflexible  است;
+  width: این اطلاعات چند درصد باکس را بگیرند;
+  justify-content: فاصله ی برابر بین المنت های هر لیست;
+
+*/
+.movie {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/*space between items and border */
+/*
+  margin-top: فاصله هر آیتم از لیست با یکدیگر (ارتفاع)
+  margin-left : فاصله هر آیتم از لیست با باکس (عرض)
+  :
+  */
+
+.li {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+/* starships items*/
+/*
+  margin-top: فاصله هر آیتم از لیست با یکدیگر (ارتفاع)
+  margin-left : فاصله هر آیتم از لیست با باکس (عرض)
+  :
+  */
+
+.li2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* except starships of item  */
+/*
+  display: نمایش محتوا در یکخط;
+  width: 70%از عرض را استفاده میکند;
+  justify-content: فاصله ی برابر بین المنت های هر لیست;
+
+
+*/
+.movie2 {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+/*botton starships */
+/*
+  color: رنگ دکمه;
+  cursor: حالت کرسر روی لینک که پوینتر است;
+  background-color: rgba(0, 0, 0, 0)    رنگ پس زمینه دکمه;
+  border: قاب ندارد;
+  transition: 0.4s ease-in-out     حالت دکنه وقتی کرسر می آید چگونه تغییر کند;
+
+ */
+.b {
+  color: orangered;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+.b:hover {
+  transform: scale(1.1);
+}
+/* star ships page (second page)*/
+
+/*
+  display: فاصله مناسب با لینک های پایین صفحه;
+  height: 100%  از تمام باکس استقاده میکند (ارتفاع);
+*/
+
+
+.star {
+  display: flex;
+  height: 100%;
+}
+/* 2 columns in second page*/
+/*
+از لحاظ عرض نصف میکند
+
+*/
+.col1,
+.col2 {
+  width: 50%;
+}
+/*starships explanation movie part*/
+/*
+margin-left: فاصلع movie  از چپ;
+  margin-top: فاصلع movie  از بالا;
+
+*/
+
+
+.dt {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+/*height of list*/
+
+/*ارتفاع نام starship  ها که 88 درصد باشد*/
+.row1 {
+  height: 88%;
+}
+/*height of next prev section*/
+
+/*ارتفاع لینک زیر برای صفحه بندی که 12 درصد ارتفاع باکس باشد*/
+
+.row2 {
+  height: 12%;
+}
+/*prev next page  style*/
+
+/*
+  display: نحوه نمایش next prev  که در یک خط بیفتد;
+  justify-content: فاصله یکسان باشد بین المنت ها;
+  margin:  فاصله خط اول با خط دوم;
+
+*/
+.butd {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+}
+/*page in prev next*/
+
+/*رنگ page نارنجی قرمز*/
+
+.parag {
+  color: orangered;
+}
+/*back tp  movies in prev*/
+/*
+  width: نمایش back to movie که از صد در صد عرض استفاده کند
+  margin: اتومات جا به جا شود;
+
+*/
+.back {
+  width: 100%;
+  margin: 0 auto;
+}
